@@ -1,0 +1,204 @@
+@import url(./reset.css);
+
+:root{
+    --DesaturatedRed: hsl(0, 36%, 70%);
+    --SoftRed: hsl(0, 93%, 68%);
+
+    --DarkGrayishRed: hsl(0, 6%, 24%);
+
+    --Linear135deg0: hsl(0, 0%, 100%);
+    --Linear135deg1: hsl(0, 100%, 98%);
+    --Linear135deg2: hsl(0, 80%, 86%);
+    --Linear135deg3: hsl(0, 74%, 74%);
+}
+
+html,body{
+    font-family: 'Josefin Sans';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Linear135deg1);
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat:no-repeat;
+
+}
+main{
+    display: flex;
+}
+.first{
+    padding: 4rem 15% 4rem 14%;
+}
+.heading{
+    padding: 0 0 6rem;
+}
+.header{
+    h1{
+        font-size: 5rem;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        font-weight: 500;
+        line-height: 5.5rem;
+        padding: 0;
+        color: var(--DarkGrayishRed);
+    }
+    span{
+        color: var(--DesaturatedRed);
+        letter-spacing: 1rem;
+        font-size: 5rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        line-height: 4.5rem;
+    }
+}
+.para{
+    padding: 1rem 0 2rem;
+    font-size: 1.1rem;
+    color: var(--DesaturatedRed);
+}
+form{
+    position: relative;
+}
+.mobilegirl{
+    display: none;
+}
+.error{
+    padding: 0.5rem 1.55rem;
+    color: var(--SoftRed);
+    position: absolute;
+    display: none;
+}
+form > div{
+    position: relative;
+    input{
+        width: 100%;
+        border-radius: 50px;
+        padding: 0.8rem 1.5rem;
+        border: 2px solid lightgray;
+    }
+    input::placeholder{
+        color: lightgray;
+    }
+    p{
+        position: absolute;
+        top: 0.9rem;
+        left: 21.2rem;
+    }
+    button{
+        position: absolute;
+        top: 0.00rem;
+        left: 23.5rem;
+        padding: 1rem 1rem;
+        border-radius: 30px;
+        width: 6rem;
+        display: flex;
+        justify-content: center;
+        border: 0;
+        box-shadow: 0 4px 20px gray;
+        background: linear-gradient(135deg, var(--Linear135deg2), var(--Linear135deg3));
+    }
+}
+.errori{
+    display: none;
+}
+input:focus{
+    border: 2px solid var(--Linear135deg2);
+    outline: none;
+}
+button:hover{
+    cursor:pointer;
+    background: linear-gradient(135deg, var(--Linear135deg1), var(--Linear135deg2));
+}
+@media screen and (max-width:575px){
+    .mobilegirl{
+        display: block;
+        width: 100%;
+    }
+    .girl{
+        display: none;
+    }
+    
+    .first{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .heading{
+        padding: 3rem;
+        img{
+            width: 9rem;
+        }
+    }
+    .header{
+        margin: 5rem 0 0;
+        text-align: center;
+        h1{
+            font-size: 3.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8rem;
+            font-weight: 600;
+            line-height: 3.5rem;
+            padding: 0;
+            color: var(--DarkGrayishRed);
+        }
+        span{
+            color: var(--DesaturatedRed);
+            letter-spacing: 0.8rem;
+            font-size: 3.1rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            line-height: 3.5rem;
+        }
+    }
+    .para{
+        padding: 1rem 3.5rem 2rem;
+        text-align: center;
+        font-size: 1.1rem;
+        color: var(--DesaturatedRed);
+    }
+    form{
+        position: relative;
+        margin: 0 0 3rem;
+    }
+    .error{
+        padding: 0.5rem 1.55rem;
+        color: var(--SoftRed);
+        position: absolute;
+        display: none;
+    }
+    form > div{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input{
+            width: 23rem;
+            border-radius: 50px;
+            padding: 1.1rem 1.5rem;
+            border: 2px solid lightgray;
+        }
+        input::placeholder{
+            color: lightgray;
+        }
+        p{
+            position: absolute;
+            top: 1.2rem;
+            left: 20.2rem;
+        }
+        button{
+            position: absolute;
+            top: 0.00rem;
+            left: 22.5rem;
+            padding: 1.31rem 1rem;
+            border-radius: 35px;
+            width: 5.5rem;
+            display: flex;
+            justify-content: center;
+            border: 0;
+            box-shadow: 0 4px 20px gray;
+            background: linear-gradient(135deg, var(--Linear135deg2), var(--Linear135deg3));
+        }
+    }
+}

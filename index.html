@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="first">
+        <div class="heading">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+        <img
+          class="mobilegirl"
+          src="./images/hero-mobile.jpg"
+          alt="girl mobile"
+        />
+        <div class="header">
+          <span>We're</span>
+          <h1>coming soon</h1>
+        </div>
+        <p class="para">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form>
+          <div class="email">
+            <input
+              type="text"
+              name="email"
+              placeholder="Email Address"
+              id="email"
+              required
+            />
+            <label for="email"
+              ><p>
+                <img
+                  src="./images/icon-error.svg"
+                  alt="error"
+                  class="errori"
+                /></p
+            ></label>
+            <label for="email"
+              ><button type="submit" id="button">
+                <img src="./images/icon-arrow.svg" alt="arrow" /></button
+            ></label>
+          </div>
+          <p class="error">Please provide a valid email</p>
+        </form>
+      </div>
+
+      <img src="./images/hero-desktop.jpg" alt="girl pic" class="girl" />
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.linkedin.com/in/chimi-rinzin-20178a291/"
+          >Chimi Rinzin</a
+        >.
+      </p>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>
